@@ -9,12 +9,12 @@ type DayHours={day:string;closed:boolean;open:string;close:string};
 function Contact({rows,save}:{rows:Row[];save:(r:Row)=>Promise<void>}){
  const existing=rows.find(r=>r.kind==='contact');
  const [row,setRow]=useState<Row>({kind:'contact',data:{},visible:true,position:0});
- useEffect(()=>{if(existing)setRow(existing)},[existing]);
+ useEffect(()=>{if(existing){const data={...existing.data};if(!data.facebook && typeof data.instagram==='string' && /^https?:\/\/(www\.)?facebook\.com\//i.test(data.instagram))data.facebook=data.instagram;delete data.instagram;setRow({...existing,data})}},[existing]);
  const schedule:DayHours[]|undefined=row.data.weeklyHours;
  const shown=days.map((day,index)=>schedule?.[index] ?? {day,closed:true,open:'',close:''});
  function changeDay(index:number,patch:Partial<DayHours>){const updated=shown.map((entry,i)=>i===index?{...entry,...patch}:entry);setRow({...row,data:{...row.data,weeklyHours:updated}})}
  return <section className="panel"><h2>Étterem adatai</h2>
- {([['address','Pontos cím'],['phone','Telefonszám'],['instagram','Instagram URL']] as const).map(([key,label])=><label className="field" key={key}>{label}<input value={row.data[key]||''} onChange={e=>setRow({...row,data:{...row.data,[key]:e.target.value}})}/></label>)}
+ {([['address','Pontos cím'],['phone','Telefonszám'],['facebook','Facebook URL']] as const).map(([key,label])=><label className="field" key={key}>{label}<input value={row.data[key]||''} onChange={e=>setRow({...row,data:{...row.data,[key]:e.target.value}})}/></label>)}
  <h3>Nyitvatartás</h3><p className="muted">Állítsd be naponta a nyitást és a zárást. A „Zárva” napokon nem kell időpontot megadni.</p>
  {row.data.hours&&!schedule&&<p className="note">Jelenlegi szöveges nyitvatartás: {row.data.hours}. Az új napi beosztás mentése után ez váltja fel.</p>}
  <div className="hours-editor">{shown.map((entry,index)=><div className="hours-row" key={entry.day}>
