@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 900" role="img" aria-labelledby="title">
+<title id="title">Morzsa burger illusztráció piros-fehér kockás háttérrel</title>
+<defs><pattern id="checks" width="90" height="90" patternUnits="userSpaceOnUse"><rect width="90" height="90" fill="#fff8e9"/><path d="M0 0h45v45H0zM45 45h45v45H45z" fill="#c50919"/></pattern><filter id="shadow" x="-30%" y="-30%" width="160%" height="180%"><feDropShadow dx="0" dy="16" stdDeviation="8" flood-color="#541316" flood-opacity=".18"/></filter></defs>
+<rect width="900" height="900" fill="#f8f1dd"/>
+<path d="M0 0h900v125H0zM0 775h900v125H0z" fill="url(#checks)"/>
+<circle cx="450" cy="454" r="344" fill="#f7dd9a" stroke="#b80918" stroke-width="11"/>
+<circle cx="450" cy="454" r="313" fill="none" stroke="#b80918" stroke-width="3" stroke-dasharray="5 20"/>
+<g fill="#b80918"><path d="M145 330l15-34 15 34 34 15-34 15-15 34-15-34-34-15z"/><path d="M725 525l12-27 12 27 27 12-27 12-12 27-12-27-27-12z"/><circle cx="205" cy="590" r="11"/><circle cx="696" cy="330" r="10"/><path d="M612 230l7-17 7 17 17 7-17 7-7 17-7-17-17-7z"/></g>
+<g transform="rotate(-7 450 470)" stroke="#661b18" stroke-width="9" stroke-linejoin="round">
+<ellipse cx="450" cy="647" rx="259" ry="35" fill="#b80918" stroke="none" opacity=".18"/>
+<path d="M199 534q251 51 502 0l-38 93q-213 79-426 0z" fill="#e8a34c"/>
+<path d="M206 539q244 38 488 0" fill="none" stroke="#fff0c8" stroke-width="19" stroke-linecap="round"/>
+<path d="M209 488q240 61 482 0l-23 60q-217 42-434 0z" fill="#603121"/>
+<path d="M210 484q118 13 243 18 127 1 236-18" fill="none" stroke="#371f18" stroke-width="17"/>
+<path d="M216 462q46 11 90-1t91 10q40-22 92 0t93-12q53 20 101 1l-13 45q-101 27-208 14-125-3-239-15z" fill="#f7c846"/>
+<path d="M212 448q59 2 97 21t93-15q48 16 91 3t100 12q58-12 89-25" fill="none" stroke="#60813d" stroke-width="26" stroke-linecap="round"/>
+<path d="M202 433q86 17 166-4t164 6q89 23 168-8" fill="none" stroke="#ed4a34" stroke-width="20" stroke-linecap="round"/>
+<path d="M206 436c-12-174 81-256 244-262 163-6 265 83 250 260q-233 48-494 2z" fill="#e8a34c"/>
+<path d="M228 411q219 43 447 2" fill="none" stroke="#ffcd75" stroke-width="16"/>
+<g fill="#fff1c7" stroke="none"><ellipse cx="349" cy="246" rx="10" ry="5" transform="rotate(-25 349 246)"/><ellipse cx="416" cy="218" rx="10" ry="5" transform="rotate(24 416 218)"/><ellipse cx="488" cy="259" rx="10" ry="5" transform="rotate(-20 488 259)"/><ellipse cx="546" cy="229" rx="10" ry="5" transform="rotate(28 546 229)"/><ellipse cx="598" cy="288" rx="10" ry="5" transform="rotate(-22 598 288)"/><ellipse cx="304" cy="310" rx="10" ry="5" transform="rotate(18 304 310)"/><ellipse cx="445" cy="290" rx="10" ry="5" transform="rotate(-28 445 290)"/></g>
+</g>
+<path d="M364 686q86 30 172 0" fill="none" stroke="#b80918" stroke-width="8" stroke-linecap="round"/>
+<path d="M322 710q128 45 256 0" fill="none" stroke="#b80918" stroke-width="3" stroke-linecap="round"/>
+</svg>
